@@ -1,34 +1,13 @@
-[  {
-    "kernelSource": {
-      "name": "linux-kernel",
-      "repo": "https://github.com/yanhuo26/android_kernel_xiaomi_sdm845.git",
-      "branch": "udc",
-      "device": "sdm845"
-    },
-    "withKernelSU": false,
-    "toolchains": [
-      {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
-        "branch": "master",
-        "name": "gas"
-      },
-      {
-        "repo": "https://github.com/kdrag0n/proton-clang.git",
-        "branch": "master",
-        "name": "clang"
-      }
-    ],
-    "params": {
-      "ARCH": "arm64",
-      "CROSS_COMPILE": "aarch64-linux-gnu-",
-      "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-      "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
-      "CLANG_TRIPLE": "aarch64-linux-gnu-",
-      "AR": "",
-      "CC": "clang"
-    },
-    "extraParams": {
-      "KEEP": ""
-    }
+[
+  {
+    "name": "Samsung Galaxy M02",
+    "author": "aviseque111",
+    "description": "KernelSU Next for SM-M022G (a02)",
+    "kernel_source": "https://github.com/aviseque111/android_kernel_samsung_m02",
+    "branch": "main",
+    "defconfig": "k39tv1_bsp_titan_hamster_defconfig",
+    "arch": "arm",
+    "toolchain": "gcc",
+    "ksu": true
   }
 ]
